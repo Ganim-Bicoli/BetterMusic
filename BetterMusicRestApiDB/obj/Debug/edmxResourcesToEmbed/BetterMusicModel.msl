@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BetterMusicModelStoreContainer" CdmEntityContainer="BetterMusicEntities">
+    <EntitySetMapping Name="MusicTable">
+      <EntityTypeMapping TypeName="BetterMusicModel.MusicTable">
+        <MappingFragment StoreEntitySet="MusicTable">
+          <ScalarProperty Name="AlbumPath" ColumnName="AlbumPath" />
+          <ScalarProperty Name="ArtistPath" ColumnName="ArtistPath" />
+          <ScalarProperty Name="BackgroundPath" ColumnName="BackgroundPath" />
+          <ScalarProperty Name="SongPath" ColumnName="SongPath" />
+          <ScalarProperty Name="ArtLastName" ColumnName="ArtLastName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ArtName" ColumnName="ArtName" />
+          <ScalarProperty Name="SongName" ColumnName="SongName" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AlbumName" ColumnName="AlbumName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLoginCred">
+      <EntityTypeMapping TypeName="BetterMusicModel.UserLoginCred">
+        <MappingFragment StoreEntitySet="UserLoginCred">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
