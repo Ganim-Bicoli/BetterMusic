@@ -24,7 +24,7 @@ function LoginPage({ navigation }) {
     }
     async function _postLoginData() {
         try {
-            await fetch('http://192.168.1.224:61581/Login/', {
+            await fetch('http://(ipv4):(Port)/Login/', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

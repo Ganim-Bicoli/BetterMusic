@@ -15,15 +15,15 @@ function MainPage({ navigation }) {
     getArtistAlbumList()
 }, [])
 
-  const songInput = (enteredText) => {
+  const songInput = (enteredText) => {  //Field where user enter the song.
     setSongSelected(enteredText)
     console.log(songSelected)
   }
 
   const getSongsFromApi = async () => {
-    try {
+    try {  //Selects song from api
       let response = await fetch(
-        'http://192.168.1.224:61581/music/' + songSelected
+        'http://(ipv4):(Port)/music/' + songSelected
         
       );
       let ArtistSelected = await response.json();
@@ -44,7 +44,7 @@ function MainPage({ navigation }) {
       setLoading(false)
       try {
         let response = await fetch(
-          'http://192.168.1.224:61581/music',
+          'http://(ipv4):(Port)/music',
         );
         let ArtistSelected = await response.json();
         setMusicObj(ArtistSelected)
